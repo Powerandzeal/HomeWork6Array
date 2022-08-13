@@ -14,7 +14,7 @@ public class Main {
 
         long[] arr3 = {2323223l, 5463633l, 54534342677l};
         //Задача номер 2
-        for (int i = 0; i < 3; i++) {
+        for (int i=0; i< arr1.length; i++) {
             if (i == 2) {
                 System.out.print(" " + arr1[i]);
             } else {
@@ -23,14 +23,14 @@ public class Main {
         }
         System.out.println();
 
-        for (int b = 0; b <= 2; b++) {
+        for (int b=0; b< arr2.length; b++) {
             if (b == 2) {
                 System.out.print(" " + arr2[b]);
             } else System.out.print(" " + arr2[b] + ",");
 
         }
         System.out.println();
-        for (int a = 0; a < 3; a++) {
+        for (int a=0; a< arr3.length; a++) {
             if (a == 2) {
                 System.out.print(" " + arr3[a]);
             } else {
@@ -41,7 +41,7 @@ public class Main {
         System.out.println();
 
         // Задача  номер 3
-        for (int e = 2; e >= 0; e--) {
+        for (int e=arr1.length-1; e>=0; e--) {
             if (e == 0) {
                 System.out.print(" " + arr1[e]);
             } else {
@@ -50,14 +50,14 @@ public class Main {
 
         }
         System.out.println();
-        for (int k = 2; k >= 0; k--) {
+        for (int k = arr2.length-1; k >=0; k--) {
             if (k == 0) {
                 System.out.print(" " + arr2[k]);
             } else System.out.print(" " + arr2[k] + ",");
 
         }
         System.out.println();
-        for (int d = 2; d >= 0; d--) {
+        for (int d = arr3.length-1; d >=0; d--) {
             if (d == 0) {
                 System.out.print(" " + arr3[d]);
             } else System.out.print(" " + arr3[d] + ",");
@@ -66,10 +66,14 @@ public class Main {
         System.out.println();
         //Четвертая задача
         for (int x = 0; x <= 2; x++) {
-            if (x % 2 == 0) {
-                arr1[x]++;
-                System.out.print(arr1[x] + " ,");
-            } else System.out.print(+arr1[x] + " ,");
+
+            if (x % 2 != 0) {
+
+                System.out.print(arr1[x] + ", ");
+
+            } else {
+                System.out.print(arr1[x]+1 + " ,");
+            }
 
 
         }
