@@ -65,14 +65,14 @@ public class Main {
         }
         System.out.println();
         //Четвертая задача
-        for (int x = 0; x <= 2; x++) {
+        for (int x = 0; x <= arr1.length -1; x++) {
 
-            if  (x % 2 == 0) {
+            if  (x % 2 != 0) {
 
-                System.out.print(arr1[x]+1 + ", ");
+                System.out.print(arr1[x] + ", ");
 
             } else {
-                System.out.print(arr1[x] + " ,");
+                System.out.print(arr1[x]+1 + " ,");
             }
 
 
